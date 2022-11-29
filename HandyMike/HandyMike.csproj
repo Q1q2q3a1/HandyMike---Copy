@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EFEA2A40-F059-41B7-B168-1EFCC3747607}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HandyMike</RootNamespace>
+    <AssemblyName>HandyMike</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add quote amount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add quote amount.Designer.cs">
+      <DependentUpon>Add quote amount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Profile.Designer.cs">
+      <DependentUpon>Admin Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHomepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHomepage.Designer.cs">
+      <DependentUpon>AdminHomepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Advertise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advertise.Designer.cs">
+      <DependentUpon>Advertise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Statuses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Statuses.Designer.cs">
+      <DependentUpon>Customer Statuses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerHomepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerHomepage.Designer.cs">
+      <DependentUpon>CustomerHomepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerProfile.Designer.cs">
+      <DependentUpon>CustomerProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Growth Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Growth Report.Designer.cs">
+      <DependentUpon>Growth Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HandymanHomepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HandymanHomepage.Designer.cs">
+      <DependentUpon>HandymanHomepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HandymanProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HandymanProfile.Designer.cs">
+      <DependentUpon>HandymanProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HandyMikeData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HandyMikeData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InputBoxClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Make Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Make Payment.Designer.cs">
+      <DependentUpon>Make Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage users.Designer.cs">
+      <DependentUpon>Manage users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management Page.Designer.cs">
+      <DependentUpon>Management Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monthly sales report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monthly sales report.Designer.cs">
+      <DependentUpon>Monthly sales report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PendingServiceRequests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PendingServiceRequests.Designer.cs">
+      <DependentUpon>PendingServiceRequests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostQuery.Designer.cs">
+      <DependentUpon>PostQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reply Queries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reply Queries.Designer.cs">
+      <DependentUpon>Reply Queries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestService.Designer.cs">
+      <DependentUpon>RequestService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service request history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Service request history.Designer.cs">
+      <DependentUpon>Service request history.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceStatus.Designer.cs">
+      <DependentUpon>ServiceStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Satisfaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User Satisfaction.Designer.cs">
+      <DependentUpon>User Satisfaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Verify payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Verify payment.Designer.cs">
+      <DependentUpon>Verify payment.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add quote amount.resx">
+      <DependentUpon>Add quote amount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Profile.resx">
+      <DependentUpon>Admin Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHomepage.resx">
+      <DependentUpon>AdminHomepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advertise.resx">
+      <DependentUpon>Advertise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Statuses.resx">
+      <DependentUpon>Customer Statuses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerHomepage.resx">
+      <DependentUpon>CustomerHomepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerProfile.resx">
+      <DependentUpon>CustomerProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Growth Report.resx">
+      <DependentUpon>Growth Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HandymanHomepage.resx">
+      <DependentUpon>HandymanHomepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HandymanProfile.resx">
+      <DependentUpon>HandymanProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Make Payment.resx">
+      <DependentUpon>Make Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage users.resx">
+      <DependentUpon>Manage users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management Page.resx">
+      <DependentUpon>Management Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monthly sales report.resx">
+      <DependentUpon>Monthly sales report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PendingServiceRequests.resx">
+      <DependentUpon>PendingServiceRequests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostQuery.resx">
+      <DependentUpon>PostQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reply Queries.resx">
+      <DependentUpon>Reply Queries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestService.resx">
+      <DependentUpon>RequestService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Service request history.resx">
+      <DependentUpon>Service request history.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceStatus.resx">
+      <DependentUpon>ServiceStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Satisfaction.resx">
+      <DependentUpon>User Satisfaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verify payment.resx">
+      <DependentUpon>Verify payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="HandyMikeData.xsc">
+      <DependentUpon>HandyMikeData.xsd</DependentUpon>
+    </None>
+    <None Include="HandyMikeData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HandyMikeData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HandyMikeData.xss">
+      <DependentUpon>HandyMikeData.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide11.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\requestsS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-black-check-logo-payment-card-credit-card-computer-icons-cheque-payment-icon-credit-payment-icon-miscellaneous-text-trademark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-user-profile-emoticon-hamburger-button-avatar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-06-06 at 6.02.14 PM %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\progress-bar-progress-scorecard-icon-with-png-and-vector-format-196549.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\progress-bar-icon-png-9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\598-5986287_man-user-avatar-decision-strategy-manager-comments-toma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\request-for-quotation-sales-quote-service-computer-icons-web-banner-png-favpng-PcWqGGfQfJXJEK03f9xHSZ4Xt_t.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HandyMike.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\POp.jpg" />
+    <None Include="Resources\images.png" />
+    <None Include="Resources\2690332-200.png" />
+    <None Include="Resources\334-3340048_pending-payment-comments-termination-of-payment-icon.png" />
+    <None Include="Resources\707-7079449_manage-user-user-management-icon-png-transparent-png.png" />
+    <None Include="Resources\333-3336950_png-file-svg-enter-number-icon-transparent-png.png" />
+    <None Include="Resources\download %281%29.png" />
+    <None Include="Resources\2C41D0A8-505F-401B-B2CD-1668B719A46F-1.png" />
+    <None Include="Resources\116-1166984_advertising-icon-png-transparent-png.png" />
+    <None Include="Resources\WhatsApp Image 2022-09-09 at 8.10.39 AM.jpeg" />
+    <None Include="Resources\938-9383200_png-file-svg-view-report-icon-png.png" />
+    <None Include="Resources\monthly-icon-101.jpg" />
+    <None Include="Resources\4645996.png" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\347-3473405_growth-icon-png-white-png-download-statistics-icon.png" />
+    <None Include="Resources\80-800351_service-request-icon-png-transparent-png.png" />
+    <None Include="Resources\monthly-icon-10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
