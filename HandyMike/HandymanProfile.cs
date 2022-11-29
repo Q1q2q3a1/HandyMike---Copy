@@ -13,10 +13,8 @@ using System.Data.SqlClient;
 namespace HandyMike
 {
     public partial class HandymanProfile : Form
-
-        //I added this
-
     {
+        //I added this
         private OleDbConnection connection = new OleDbConnection();
         List<string> ids = new List<string>();
         public HandymanProfile()
